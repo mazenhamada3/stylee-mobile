@@ -120,7 +120,7 @@ stylee-mobile/
 
 A full Software Requirements Specification (SRS) was produced for this project, covering functional/non-functional requirements, ER diagrams, DFDs, sequence diagrams, and use case diagrams:
 
-📎 [STYLEE Mobile — SRS Document](Docs/Software_Requirements_Specification_(SRS).pdf)
+📎 [STYLEE Mobile — SRS Document](project/Docs/Software_Requirements_Specification_(SRS).pdf)
 
 ---
 
