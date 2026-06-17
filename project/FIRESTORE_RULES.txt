@@ -1,0 +1,55 @@
+==============================================
+  STYLEE — Firestore Security Rules
+  FIX for issues 2 and 4 (products & admin)
+==============================================
+
+STEPS:
+1. Go to console.firebase.google.com
+2. Open your project → Firestore Database
+3. Click "Rules" tab
+4. Replace ALL content with the rules below
+5. Click "Publish"
+
+──────────────────────────────────────────────
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Products ─────────────────────────────
+    // Anyone can READ products (fixes issue 2: no products appearing)
+    // Only admins can WRITE products (fixes issue 4: insufficient permissions)
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if request.auth != null &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isAdmin == true;
+    }
+
+    // ── User profiles ─────────────────────────
+    // Users can only read/write their own profile
+    match /users/{userId} {
+      allow read, write: if request.auth != null &&
+        request.auth.uid == userId;
+
+      // Cart subcollection
+      match /cart/{cartId} {
+        allow read, write: if request.auth != null &&
+          request.auth.uid == userId;
+      }
+
+      // Orders subcollection
+      match /orders/{orderId} {
+        allow read, write: if request.auth != null &&
+          request.auth.uid == userId;
+      }
+    }
+  }
+}
+
+──────────────────────────────────────────────
+
+ALSO: To make yourself admin, go to:
+Firestore → users → (your user document) → Edit
+Add field:  isAdmin = true (boolean)
+
+──────────────────────────────────────────────

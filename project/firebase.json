@@ -1,0 +1,19 @@
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "stylee-app-4b6cb",
+          "configurations": {
+            "android": "1:307032636046:android:646bb6623e024bb7ca27df",
+            "ios": "1:307032636046:ios:420856cfac5a4193ca27df",
+            "web": "1:307032636046:web:0aebe8bfcf9014a1ca27df"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  }
+}
