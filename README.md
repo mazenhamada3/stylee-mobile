@@ -18,26 +18,26 @@ This is the **mobile-native evolution** of the STYLEE platform. While the web ve
 
 
 ### 1. Login & Authentication
-![Login Screen](Demo/login.png)
-![Register Screen](Demo/Register.png)
+![Login Screen](project/Demo/login.png)
+![Register Screen](project/Demo/Register.png)
 
 ### 2. Home & Product Catalog
-![Home Screen](Demo/home.png)
-![Home Screen](Demo/search.png)
+![Home Screen](project/Demo/home.png)
+![Home Screen](project/Demo/search.png)
 
 ### 3. Product Detail & Variant Selection
-![Product Detail Screen](Demo/product_detail_1.png)
-![Product Detail Screen](Demo/product_detail_2.png)
+![Product Detail Screen](project/Demo/product_detail_1.png)
+![Product Detail Screen](project/Demo/product_detail_2.png)
 
 ### 4. Cart & Checkout
-![Cart Screen](Demo/cart.png)
-![Checkout Screen](Demo/checkout.png)
+![Cart Screen](project/Demo/cart.png)
+![Checkout Screen](project/Demo/checkout.png)
 
 ### 5. Admin Panel — Products & Orders
-![Admin Products Tab](Demo/admin_profile.png)
-![Admin Products Tab](Demo/admin_products.png)
-![Admin Products Tab](Demo/admin_products_edit_add.png)
-![Admin Orders Tab](Demo/admin_orders.png)
+![Admin Products Tab](project/Demo/admin_profile.png)
+![Admin Products Tab](project/Demo/admin_products.png)
+![Admin Products Tab](project/Demo/admin_products_edit_add.png)
+![Admin Orders Tab](project/Demo/admin_orders.png)
 
 ---
 
