@@ -14,8 +14,6 @@ This is the **mobile-native evolution** of the STYLEE platform. While the web ve
 
 ## 🎥 Demo
 
-> Screenshots and demo video coming soon.
-
 
 ### 1. Login & Authentication
 ![Login Screen](project/Demo/login.png)
